@@ -20,7 +20,7 @@ public class RandomNameService {
       InputStream inputStream = new FileInputStream(new File(fileName));
       
       Yaml yaml = new Yaml();
-      Map<String, Object> data = yaml.load(inputStream);
-      System.out.println(data);
+      BabyNames data = yaml.load(inputStream);
+      System.out.println(data.size());
     }
 }
